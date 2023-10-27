@@ -1,0 +1,38 @@
+.heading{
+    color: red;
+    font-size: x-large;
+    background-color: aqua;
+}
+
+
+#idSelect{
+    color: green;
+}
+
+*{
+    font-size: xx-large;
+}
+
+
+
+.heading, #idSelect{
+    background-color: bisque;
+}
+
+
+div.h33{
+    color: blue;
+}
+
+
+
+p{
+    color: #229954;
+}
+
+.container{
+    background-color: aqua;
+    border: 8px solid gray;
+    padding: 25px;
+    margin: 30px;
+}
