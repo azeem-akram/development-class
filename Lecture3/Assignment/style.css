@@ -1,0 +1,55 @@
+body{
+    background-image: url("pxfuel.jpg");
+    background-size: cover;
+}
+
+.porfolio{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+    opacity: 0.8;
+}
+
+
+.person-image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.person-image{
+    margin-right: 30px;
+}
+
+.person-image, .person-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.about{
+    text-align: left;
+}
+
+.content{
+    text-align: left;
+}
+
+.month-box{
+    background-color: rgb(234, 234, 234);
+    padding: 20px;
+    width: 27%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    box-shadow: rgb(163, 163, 163) 2px 2px 8px 0px;
+    display: inline-block;
+    margin: 10px;
+}
+
+.month-box ul{
+    list-style-type: square;
+}
