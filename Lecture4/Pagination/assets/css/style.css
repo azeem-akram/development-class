@@ -1,0 +1,25 @@
+.page{
+    background-color: lightgray;
+    padding: 200px;
+    margin-bottom: 20px;
+}
+
+
+.pagination{
+    padding: 25px;
+    background-color: cadetblue;
+}
+
+.pagination a{
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+
+
+.pagination a:hover{
+    background-color: rgb(133, 86, 28);
+    color: white;
+}
+
