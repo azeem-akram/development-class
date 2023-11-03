@@ -1,0 +1,57 @@
+body{
+    background-image: linear-gradient(60deg, rgb(171, 246, 171), rgb(0, 255, 229));
+}
+
+.form-container{
+    width: 1000px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 50 auto;
+}
+
+
+label{
+    display: block;
+}
+
+
+.user-details{
+    display: flex;
+    flex-wrap: wrap; /* Wrap means it should break the line */
+}
+
+.input-box{
+    width: 282px;
+    padding: 23px;
+}
+
+
+.input-box input, select{
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+
+.option-box{
+    padding: 25px;
+}
+
+
+select{
+    height: 50px;
+}
+
+
+.fauzia{
+    width: 100%;
+    background-image: linear-gradient(150deg, rgb(171, 246, 171), rgb(0, 255, 229));
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    padding: 25px;
+}
