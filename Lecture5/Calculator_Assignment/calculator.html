@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            .calculator{
+                width: 260px;
+                height: 360px;
+                margin: 150px auto;
+                background-color: beige;
+                border: 1px solid black;
+                padding: 5px;
+            }
+
+            
+
+            .heading{
+                text-align: center;
+                background: white;
+                margin-bottom: 8px;
+                padding: 14px;
+                background-color: burlywood;
+            }
+
+
+            .buttons-box{
+                display: flex;
+                flex-wrap: wrap;
+                
+            }
+
+            .input{
+                flex-grow: 2;
+                margin: 5px;
+                padding: 10px 10px;
+            }
+
+            .btn{
+                width: 54px;
+                flex-grow: 1;
+                margin: 5px;
+                padding: 10px 10px;
+                background-color: #0f5288;
+                border: 2px solid black;
+                color: white;
+				border-radius: 8px;
+            }
+			
+			.btn:hover{
+				background-color: #07233a;
+			}
+
+           
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="heading">
+                Calculator
+            </div>
+            <div class="buttons-box">
+                <input type="text" class="input">
+                <input type="button" class="btn" value="C"/>
+                <input type="button" class="btn" value="1"/>
+                <input type="button" class="btn" value="2"/>
+                <input type="button" class="btn" value="3"/>
+                <input type="button" class="btn" value="Sin"/>
+                <input type="button" class="btn" value="4"/>
+                <input type="button" class="btn" value="5"/>
+                <input type="button" class="btn" value="6"/>
+                <input type="button" class="btn" value="Cos"/>
+                <input type="button" class="btn" value="7"/>
+                <input type="button" class="btn" value="8"/>
+                <input type="button" class="btn" value="9"/>
+                <input type="button" class="btn" value="Tan"/>
+                <input type="button" class="btn" value="+"/>
+                <input type="button" class="btn" value="-"/>
+                <input type="button" class="btn" value="*"/>
+                <input type="button" class="btn" value="/"/>
+                <input type="button" class="btn" value="."/>
+                <input type="button" class="btn" value="0"/>
+                <input type="button" class="btn" value="="/>
+                <input type="button" class="btn" value="%"/>
+            </div>
+        </div>
+    </body>
+</html>
