@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+}
+
+.nav{
+    background-color: rgb(24, 152, 232);
+    width: 100%;
+    height: 50px;
+}
+
+.nav-links a{
+    display: inline-block;
+    padding: 16px 10px 16px 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a:hover{
+    background-color: bisque;
+}
+
+.nav-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.nav-btn label span{
+    display: block; /* To make span block which is by default an inline element */
+    border-top: 2px solid white;
+    width: 25px;
+    height: 7px;
+}
+
+
+
+#nav-check{
+    display: none;
+}
+
+.nav-btn{
+    display: none;
+}
+
+
+
+
+
+/* Media query for mobiles */
+@media screen and (max-width: 450px){
+
+
+    .nav-btn{
+        display: block;
+    }
+
+
+    .nav-links{
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: aqua;
+        top: 50px;
+        overflow: hidden;
+        height: 0px;
+        transition: all 0.8s ease-in;
+    }
+
+    .nav-links a{
+        display: block;
+        width: 100%;
+    }
+
+
+
+    /* New CSS selector for :checked */
+    #nav-check:checked ~ .nav-links{
+        background-color: aquamarine;
+        overflow: auto;
+        height: 500px;
+    }
+
+
+}
