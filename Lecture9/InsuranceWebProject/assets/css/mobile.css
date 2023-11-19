@@ -1,0 +1,80 @@
+
+
+@media screen and (max-width: 500px) {
+    .sidebar{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+
+    .page-body{
+        width: 100%;
+    }
+
+
+    .content2{
+        padding: 200px 20px;
+    }
+
+    .main-content{
+        margin-left: 0px;
+    }
+
+    .inputs{
+        flex-wrap: wrap;
+    }
+
+    .form-input{
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 25px;
+    }
+    
+    .contact-form, .sidebar, .main-content, .content2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #lipsum{
+        padding: 20px;
+    }
+
+
+
+    /* Navigations responsive CSS */
+    .nav-btn{
+        display: block;
+    }
+
+
+    .nav-links{
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: aqua;
+        top: 50px;
+        overflow: hidden;
+        height: 0px;
+        transition: all 0.5s ease-in;
+    }
+
+    .nav-links a{
+        display: block;
+        width: 100%;
+    }
+
+
+
+    /* New CSS selector for :checked */
+    #nav-check:checked ~ .nav-links{
+        background-color: aquamarine;
+        overflow: auto;
+        height: 300px;
+    }
+
+    .nav{
+        margin-bottom: 20px;
+    }
+    
+
+}
