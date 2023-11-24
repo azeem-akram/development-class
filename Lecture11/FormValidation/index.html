@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <script src="assets/js/script.js"></script>
+    </head>
+    <body>
+        <form method="post" id="myForm">
+            <h2>My Form</h2>
+
+            <label>First Name:</label>
+            <input type="text" class="my-input" id="firstName"/>
+            <div id="firstNameError" class="error-msg"></div>
+
+            <label>Last Name:</label>
+            <input type="text" class="my-input" id="lastName"/>
+            <div id="lastNameError" class="error-msg"></div>
+
+            <label>Email Address:</label>
+            <input type="text" class="my-input" id="email"/>
+            <div id="emailError" class="error-msg"></div>
+
+
+            
+
+
+            <div class="btn-box">
+                <input type="button" onclick="validateForm()" class="my-btn" value="Submit Form"/>
+            </div>
+
+
+
+        </form>
+    </body>
+</html>
