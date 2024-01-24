@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Star News</title>
+        <link rel="stylesheet" href="/assets/css/style.css"/>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Star News</h1>
+        </header>
+
+        <nav>
+            <a onclick="displayNews('')">Home</a>
+            <a onclick="displayNews('business')">Business</a>
+            <a onclick="displayNews('technology')">Technology</a>
+            <a onclick="displayNews('sports')">Sports</a>
+        </nav>
+
+
+        <div class="search-box">
+            <input type="text" id="searchBox" placeholder="Enter you search query"/>
+            <button onclick="searchNew()">Search</button>
+        </div>
+
+
+        <div id="news-container" class="news-container">
+
+        </div>
+
+
+
+    </body>
+</html>
