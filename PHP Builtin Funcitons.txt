@@ -24,6 +24,10 @@ time(): Return the current server time
 
 
 
+isset($any-variable): Check if that variable exist
+
+
+
 
 
 
