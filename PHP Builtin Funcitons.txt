@@ -26,7 +26,11 @@ time(): Return the current server time
 
 isset($any-variable): Check if that variable exist
 
+file_exists($filepath): Returns true if the file exists otherwise returns false
 
+file($filepath): Read the file and return lines in array
+
+explode($delimeter, $line): Breaks the string into array using delimeter
 
 
 
