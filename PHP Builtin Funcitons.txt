@@ -20,7 +20,7 @@ date($format): Return the current date string of the server(Not the client)
 
 date(format, $timestamp): Return the date string of that timestamp in the specified format
 
-time(): Return the current server time
+time(): Return the current server time in timestamp(No of seconds from  1970)
 
 
 
@@ -31,6 +31,14 @@ file_exists($filepath): Returns true if the file exists otherwise returns false
 file($filepath): Read the file and return lines in array
 
 explode($delimeter, $line): Breaks the string into array using delimeter
+
+
+setcookie($cookie_name, $cookie_value, $expiration_time, $defult): To store cookie for specific amount of time
+
+
+session_start(): Starts a new sessions to store user data
+
+session_destroy(): To delete/destroy session
 
 
 
