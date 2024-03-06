@@ -41,5 +41,10 @@ session_start(): Starts a new sessions to store user data
 session_destroy(): To delete/destroy session
 
 
+unset($variable): Distroy the varibale passed
+
+
+password_hash($rawpassword, PASSWORD_DEFAULT): Returns an encrypted password
+
 
 
