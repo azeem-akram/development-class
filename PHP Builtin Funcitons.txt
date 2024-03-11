@@ -38,13 +38,16 @@ setcookie($cookie_name, $cookie_value, $expiration_time, $defult): To store cook
 
 session_start(): Starts a new sessions to store user data
 
-session_destroy(): To delete/destroy session
+session_destroy(): To delete/destroy session variables
 
 
 unset($variable): Distroy the varibale passed
 
 
+
 password_hash($rawpassword, PASSWORD_DEFAULT): Returns an encrypted password
+password_verify($password, $encrypted_pass): Returns True if passwords verified otherwise return false
+
 
 
 

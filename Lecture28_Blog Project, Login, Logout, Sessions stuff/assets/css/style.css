@@ -1,0 +1,23 @@
+.err{
+    background-color: rgb(252 184 184);
+    padding: 10px;
+    color: red;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 26px;
+}
+
+
+.suc{
+    background-color: rgb(151, 255, 193);
+    padding: 10px;
+    color: rgb(0, 122, 22);
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 26px;
+}
+
+
+.text-success{
+    color: green;
+}
