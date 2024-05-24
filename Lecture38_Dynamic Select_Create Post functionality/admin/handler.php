@@ -1,0 +1,100 @@
+<?php
+session_start();
+include "../database.php";
+
+
+//If login button is pressed
+if(isset($_POST['login-btn'])){
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * from admin WHERE email = '$email'";
+    $results = $conn->query($sql);
+
+    if($results->num_rows > 0){
+        $row = $results->fetch_assoc();
+
+        if(password_verify($password, $row['password'])){
+            
+            $_SESSION['admin_userId'] = $row['id'];
+            $_SESSION['admin_email'] = $email;
+            $_SESSION['admin_first_name'] = $row['first_name'];
+            $_SESSION['admin_last_name'] = $row['last_name'];
+
+            $_SESSION['success'] = "You have been logged in";
+            echo "<script> window.location.href='/admin/dashboard.php' </script>";
+            die;
+
+
+        }
+        else{
+            $_SESSION['error'] = "Incorrect email or password";
+            echo "<script> window.location.href='/admin/' </script>";
+            die;
+        }
+
+    }
+    else{
+        $_SESSION['error'] = "Incorrect email or password";
+        echo "<script> window.location.href='/admin/' </script>";
+        die;
+    }
+}
+
+
+
+
+if(isset($_POST['add-new-post'])){
+
+    $imgFile = $_FILES['img'];
+    $title = $_POST['title'];
+    $content = $_POST['content'];
+    $category = $_POST['category'];
+
+
+    // Step 1: Upload the file in uploads folder
+
+    $path = "../uploads/";
+
+    $tempName = $imgFile['tmp_name'];
+    $actualName =  $imgFile['name'];
+
+    if(move_uploaded_file($tempName, $path . $actualName)){
+        $_SESSION['success'] = "Thumbnail uploaded";
+    }
+    else{
+        $_SESSION['error'] = "Error occured while uploading img, Please try again with different Image";
+    }
+
+
+
+
+
+    // Step 2: Save the file name with other data(title, content, category) in database table
+
+    $sql = "INSERT into blog_posts (title, image, content, type) VALUES('$title', '$actualName', '$content', '$category')";
+
+    $results = $conn->query($sql);
+
+    if($results){
+        $_SESSION['success'] = "Blog uploaded successfully";
+        echo "<script> window.location.href='/admin/blog-posts.php' </script>";
+
+    }
+    else{
+        $_SESSION['error'] = "Error Occured while saving blog, Please try again";
+    }
+
+
+
+    echo "<script> window.location.href='/admin/blog-posts.php' </script>";
+
+
+
+
+
+}
+
+
+
+?>
