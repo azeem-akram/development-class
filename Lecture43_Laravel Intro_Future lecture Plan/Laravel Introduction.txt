@@ -1,0 +1,6 @@
+Laravel Framework
+
+- It an open source PHP framwork
+- It has lot of builtin stuff for us to use like Models, Authentication, Admin stuff
+- It uses MVC(Model View Controller Pattern)
+- Has a builtin relatioshional database connectivity
