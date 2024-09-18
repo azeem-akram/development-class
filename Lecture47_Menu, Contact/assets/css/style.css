@@ -1,0 +1,119 @@
+.bg-dark{
+    background-color: #192A53!important;
+}
+
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+
+.hero-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.hero-text{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90px;
+    margin-top: 90px;
+}
+
+.text-yellow{
+    color: rgb(255, 194, 27);
+}
+
+
+.hero-img{
+    width: 500px;
+}
+
+.programs-section{
+    background-color: #DADDE3;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.program{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #E9F2FF;
+    cursor: pointer;
+}
+
+
+.program-btn{
+    background-color: #59afff;
+    padding: 5px 25px;
+    border-radius: 5px;
+    width: 200px;
+    margin-bottom: 25px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+.about-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.about-img{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 150px;
+}
+
+
+.email-us-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.text-dark{
+    color: #192A53!important;
+}
+
+
+.text-white{
+    color: white!important;
+}
+
+.bg-white{
+    background-color: white!important;
+}
+
+
+.email-us-section label{
+    color: white;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+.btn-white{
+    background-color: white;
+    padding: 20px;
+    color: #192A53!important;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+
+
+
+
+/* Mobile Media Query */
+@media screen and (max-width: 450px) {
+    .hero-img{
+        width: 100%;
+    }
+    .hero-text{
+        font-size: 40px;
+    }
+}

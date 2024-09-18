@@ -49,5 +49,8 @@ substr($string, 0, 100): Gets a part of string
 move_uploaded_file($temporary_name, $full_path): It return true if the file upload is successful otherwise returns false
 
 
+nl2br($string): It return string with <br/> tags inserted to show line breaks in HTML document
+
+
 
 
