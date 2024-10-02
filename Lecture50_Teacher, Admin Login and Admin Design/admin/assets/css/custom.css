@@ -1,0 +1,32 @@
+.sb-topnav{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.public-website-btn{
+    color: white;
+    text-decoration: none;
+    background-color: cadetblue;
+    padding: 3px 10px;
+    border-radius: 3px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.main-content{
+    height: 2000px; 
+    background-color: yellow; 
+    margin-top: 56px;
+}
+
+.sidebar{
+    width: 230px;
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+    color: white;
+    margin-top: 56px;
+}
