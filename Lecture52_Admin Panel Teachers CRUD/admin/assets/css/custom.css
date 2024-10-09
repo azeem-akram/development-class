@@ -1,0 +1,81 @@
+.sb-topnav{
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.public-website-btn{
+    color: white;
+    text-decoration: none;
+    background-color: cadetblue;
+    padding: 3px 10px;
+    border-radius: 3px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.main-content{
+    height: 2000px; 
+    margin-top: 56px;
+}
+
+.sidebar{
+    width: 230px;
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+    color: white;
+    margin-top: 56px;
+}
+
+
+.content-main{
+    margin-left: 230px;
+  }
+  
+
+  .stat{
+    padding: 70px 50px;
+    background-color: aquamarine;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    position: relative;
+  }
+
+
+  .stat h3{
+    font-weight: 900;
+    font-size: 50px;
+  }
+
+
+  .stat hr{
+    margin-left: -50px;
+    margin-right: -50px;
+    position: relative;
+    top: 37px;
+  }
+
+  .stat a{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: smaller;
+  }
+
+
+  .sidebar a{
+    display: block;
+    padding: 15px 25px;
+  }
+
+  .sidebar a:hover{
+    background-color: #415da3;
+    color: white!important;
+  }
