@@ -54,3 +54,9 @@ nl2br($string): It return string with <br/> tags inserted to show line breaks in
 
 
 
+fetch_all(MYSQLI_AASOC): return everthing in the database table in a form of array of arrays
+
+
+
+
+
